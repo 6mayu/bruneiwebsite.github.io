@@ -456,14 +456,14 @@ header .icons a:hover{
     right: 30px;
     font-size: 18px;
     border: none;
-    background-color: #4fc6fe;
+    background-color: #7ba3ed;
     color: white;
     cursor: pointer;
     padding: 12px;
     border-radius: 10px;
 }
 #header:hover {
-    background-color: #7ba3ed;
+    background-color: #4fc6fe;
 }
 .contact {
     background-image: url(image/blue2.jpg);
