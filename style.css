@@ -153,6 +153,7 @@ header .icons a:hover{
     margin-top: 30px;
     padding: 0 150px;
 }
+
 .history::before,
 .history::after {
     content: "";
