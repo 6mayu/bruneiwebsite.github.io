@@ -231,6 +231,7 @@ header .icons a:hover{
 }
 .handicraft h3{
     font-size: 18px;
+    text-align: center;
     padding-bottom: 20px;
     text-shadow: 0 0 8px gold;
 }
@@ -288,7 +289,8 @@ header .icons a:hover{
     text-align: justify;
 }
 .costume-item h3 {
-    font-size: 18px; 
+    font-size: 18px;
+    text-align: center;
     color: rgb(17, 17, 17);
     padding-top: 20px;
     padding-bottom: 10px;
