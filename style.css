@@ -198,7 +198,7 @@ header .icons a:hover{
 .handicraft h2{
     font-size: 27px;
     color: black;
-    text-align: left;
+    text-align: center;
     padding-top: 60px;
     padding-bottom: 5px;
     padding-left: 30px;
@@ -267,6 +267,7 @@ header .icons a:hover{
 
 .costume h2 {
     font-size: 27px;
+    text-align: center;
     color: rgb(14, 13, 13); 
     padding-top: 20px; 
     padding-bottom: 20px;
