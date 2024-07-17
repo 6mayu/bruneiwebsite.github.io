@@ -141,16 +141,37 @@ header .icons a:hover{
     -webkit-text-stroke: 2px rgb(240, 208, 208);
     color: transparent;
 }
-.history{
-    background-image: url(image/motif\(1\).png), url(image/motif\(1\).png), url(image/blue2.jpg);
+.history {
+    position: relative;
+    background-image: url("image/blue2.jpg");
     background-repeat: no-repeat;
-    background-position: left top, right top, center;
-    background-size: calc(11%), calc(11%), 100% 100%;
+    background-position: center;
+    background-size: 100% 100%;
     background-attachment: fixed;
     min-height: 100vh; 
     width: 100%;
     margin-top: 30px;
-    padding: 0 200px;
+    padding: 0 150px;
+}
+.history::before,
+.history::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    width: 11%;
+    height: 100%;
+    background-image: url("image/motif(1).png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-attachment: fixed;
+}
+.history::before {
+    left: 0;
+    background-position: left top;
+}
+.history::after {
+    right: 0;
+    background-position: right top;
 }
 .history h2{
     font-size: 27px;
@@ -255,7 +276,7 @@ header .icons a:hover{
 }
 .costume{
     border-radius: 15px; 
-    padding: 0 200px; 
+    padding: 0 150px; 
     box-shadow: 0 4px 8px rgba(44, 68, 91, 0.2); 
     margin-top: 30px;
     text-align: center;
@@ -330,7 +351,7 @@ header .icons a:hover{
     min-height: 100vh; 
     width: 100%;
     margin-top: 30px;
-    padding: 0 200px; 
+    padding: 0 150px; 
 }
 .food h2{
     font-size: 27px;
