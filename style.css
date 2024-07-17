@@ -274,19 +274,39 @@ header .icons a:hover{
     padding-top: 10px;
     padding-bottom: 10px;
 }
-.costume{
+.costume {
+    position: relative;
     border-radius: 15px; 
     padding: 0 150px; 
     box-shadow: 0 4px 8px rgba(44, 68, 91, 0.2); 
     margin-top: 30px;
     text-align: center;
-    background-image: url(image/motif\(1\).png), url(image/motif\(1\).png), url(image/blue2.jpg);
+    background-image: url("image/blue2.jpg");
     background-repeat: no-repeat;
-    background-position: left top, right top, center;
-    background-size: calc(11%), calc(11%), 100% 100%;
+    background-position: center;
+    background-size: 100% 100%;
     background-attachment: fixed;
 }
-
+.costume::before,
+.costume::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    width: 11%;
+    height: 100%;
+    background-image: url("image/motif(1).png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-attachment: fixed;
+}
+.costume::before {
+    left: 0;
+    background-position: left top;
+}
+.costume::after {
+    right: 0;
+    background-position: right top;
+}
 .costume h2 {
     font-size: 27px;
     text-align: center;
@@ -342,16 +362,37 @@ header .icons a:hover{
 .costume img:hover{
     transform: translateY(-10px);
 }
-.food{
-    background-image: url(image/motif\(1\).png), url(image/motif\(1\).png), url(image/blue2.jpg);
+.food {
+    position: relative;
+    background-image: url("image/blue2.jpg");
     background-repeat: no-repeat;
-    background-position: left top, right top, center;
-    background-size: calc(11%), calc(11%), 100% 100%;
+    background-position: center;
+    background-size: 100% 100%;
     background-attachment: fixed;
-    min-height: 100vh; 
+    min-height: 100vh;
     width: 100%;
     margin-top: 30px;
-    padding: 0 150px; 
+    padding: 0 150px;
+}
+.food::before,
+.food::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    width: 11%;
+    height: 100%; /* Adjust this to the desired height */
+    background-image: url("image/motif(1).png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-attachment: fixed;
+}
+.food::before {
+    left: 0;
+    background-position: left top;
+}
+.food::after {
+    right: 0;
+    background-position: right top;
 }
 .food h2{
     font-size: 27px;
